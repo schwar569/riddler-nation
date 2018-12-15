@@ -30,8 +30,8 @@ def create_random_army():
     for i in range(NUM_CASTLES):
         army.append(random.randint(0, TOTAL_SOLDIERS / NUM_CASTLES))
 
-    # Clearly, we mose likely won't have enough soldiers after
-    # the initial population, so we will multiple each castle
+    # Clearly, we most likely won't have enough soldiers after
+    # the initial population, so we will multiply each castle
     # by a boost
     boost_factor = (1.0 * TOTAL_SOLDIERS) / sum(army)
     for k in range(len(army)):
